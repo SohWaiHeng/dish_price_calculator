@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bill calculator</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Bill calculator</h1>
+        <form>
+                <p>How many dishes did you order?</p>
+                <input id="numberOfDishes" type="text" placeholder="Number of Dishes"> dishes
+                <!-- <button type="button">Enter number</button> -->
+                <p>How many people are sharing the bill?</p>
+                <input id="numberOfPeople" type="text" placeholder="Number of People"> people
+                <!-- <button type="button" id="calculate">Calculate!</button> -->
+                <p>Enter the price of each dishes once at a time</p>
+                <input id="prices" type="text" placeholder="Prices"><br>
+                <button id="myBtn" type="button" onclick="calculate()">Enter price</button>
+        </form>
+        <div id="toPay">
+            <sup>$</sup><span id="pay">0.00</span>
+            <small id="each">each</small>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
